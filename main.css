@@ -15,6 +15,9 @@ li {
     float: left;
     text-decoration: none;
     border-radius: 0.5px;
+    background-color: black;
+    border: 1px red;
+    font-size: 20px;
 }
 
 li a {
@@ -24,16 +27,90 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     background-color: aquamarine;
+    border: 1px red;
+    border-radius: 1px;
+    padding-right: 25px;
+    border-right: 2px solid black;
 }
 
 li a:hover {
     background-color: black;
     text-decoration: none;
     border: 1px white;
+    cursor: crosshair;
+    transition: all 0.5s;
 }
 
+li span {
+    cursor: crosshair;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  li span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  li:hover span {
+    padding-right: 25px;
+  }
+  
+  li:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
 li a:active {
-    background-color: aqua;
+    color: gold;
+    background-color: red;
     text-decoration: none;
 }
 
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 4px;
+    border: 4px ridge black;
+    padding: 2px;
+  }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 5.5vw;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 1px;
+    width: 33%;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+#cpe {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#intro1 {
+    font-size: 1.5em;
+}
