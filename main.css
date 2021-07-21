@@ -114,3 +114,13 @@ li a:active {
 #intro1 {
     font-size: 1.5em;
 }
+
+footer {
+    background-color: aqua;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: cursive;
+}
