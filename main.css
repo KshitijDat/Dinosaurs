@@ -9,6 +9,7 @@ ul {
     overflow: hidden;
     text-decoration: none;
     border: 2px solid black;
+    top:0%;
 }
 
 li {
@@ -133,6 +134,7 @@ footer {
     margin-right: 16px;
     font-size: 17px;
     align-items: right;
+    width: 100%;
   }
   
   @media screen and (max-width: 600px) {
@@ -142,7 +144,7 @@ footer {
       text-align: left;
       width: 100%;
       margin: 0;
-      padding: 14px;
+      padding: 25px;
     }
     #sc input[type=text] {
       border: 0.5vw solid #ccc;
